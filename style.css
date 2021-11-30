@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d2be99;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  background-color: #fff;
+  border: 1px solid rgb(241, 237, 237);
+  flex-basis: 250px;
+  height: 250px;
+  padding: 12px 12px 25px;
+  transition: transform 1s;
+}
+
+.row a:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Row 1 */
+a[href="images/nature.jpg"],
+a[href="images/road.jpg"] {
+  transform: rotate(-6deg)
+}
+
+a[href="images/avenue.jpg"] {
+  transform: rotate(6deg)
+}
+
+/* Row 2 */
+a[href="images/tree.jpg"],
+a[href="images/garden.jpg"] {
+  transform: rotate(6deg)
+}
+
+a[href="images/mountains.jpg"] {
+  transform: rotate(-6deg)
+}
+
+/* Row 3 */
+a[href="images/bird.jpg"] {
+  transform: rotate(-6deg)
+}
+
+a[href="images/hut.jpg"],
+a[href="images/parrot.jpg"] {
+  transform: rotate(6deg)
+}
+
+a:hover {
+  transform: rotate(0deg) scale(1.3);
+  transition: transform 1s;
+  z-index: 10;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-wrap: wrap
+  }
+}
