@@ -1,1 +1,1 @@
-# polaroid-photo-gallery
+# Polaroid Photo Gallery
