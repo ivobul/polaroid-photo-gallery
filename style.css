@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  padding: 40px 30px;
+  padding: 70px 30px;
 }
 
 .row {
@@ -75,8 +75,16 @@ img {
   width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 575px) {
   .row {
     flex-wrap: wrap
+  }
+  
+  .row a:not(:last-child) {
+    margin-right: 0;
+  }
+  
+  a:hover {
+    transform: rotate(0deg) scale(1.2);
   }
 }
